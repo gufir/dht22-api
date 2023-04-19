@@ -40,11 +40,6 @@ client.on('message', function (topic, message) {
   }
 });
 
-// API route to serve HTML file with WebSocket client code
-// app.get('/', function (req, res) {
-//   res.sendFile(__dirname + '/index.html');
-// });
-
 app.get('/sensorDHT22', function (req, res) {
     res.json(sensorData);
   });
